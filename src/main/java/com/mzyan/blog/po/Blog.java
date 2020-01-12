@@ -17,13 +17,15 @@ public class Blog {
     private Long id; //Id
 
     private String title; // 博客标题
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String content; // 博客内容
     private String firstPicture; // 博客首图
     private String flag; // 博客标记（原创/转载/...）
     private Integer views; // 浏览数
     private boolean appreciation; // 是否开启赞赏
     private boolean shareStatement; // 版权开启
-    private boolean commenttabled; // 评论开启
+    private boolean commentabled; // 评论开启
     private boolean published; // 是否发布
     private boolean recommend; // 是否评论
     @Temporal(TemporalType.TIMESTAMP)
@@ -40,6 +42,9 @@ public class Blog {
     private User user;
     @OneToMany(mappedBy = "blog")
     private List<Comment> comments = new ArrayList<>();
+
+    @Transient
+    private String tagIds;
 
     public Blog() {
     }
@@ -108,12 +113,12 @@ public class Blog {
         this.shareStatement = shareStatement;
     }
 
-    public boolean isCommenttabled() {
-        return commenttabled;
+    public boolean isCommentabled() {
+        return commentabled;
     }
 
-    public void setCommenttabled(boolean commenttabled) {
-        this.commenttabled = commenttabled;
+    public void setCommentabled(boolean commentabled) {
+        this.commentabled = commentabled;
     }
 
     public boolean isPublished() {
@@ -180,6 +185,14 @@ public class Blog {
         this.comments = comments;
     }
 
+    public String getTagIds() {
+        return tagIds;
+    }
+
+    public void setTagIds(String tagIds) {
+        this.tagIds = tagIds;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -191,7 +204,7 @@ public class Blog {
                 ", views=" + views +
                 ", appreciation=" + appreciation +
                 ", shareStatement=" + shareStatement +
-                ", commenttabled=" + commenttabled +
+                ", commentabled=" + commentabled +
                 ", published=" + published +
                 ", recommend=" + recommend +
                 ", createTime=" + createTime +
