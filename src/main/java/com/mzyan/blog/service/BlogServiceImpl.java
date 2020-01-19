@@ -4,6 +4,7 @@ import com.mzyan.blog.dao.BlogRepository;
 import com.mzyan.blog.exception.NotFoundException;
 import com.mzyan.blog.po.Blog;
 import com.mzyan.blog.po.Type;
+import com.mzyan.blog.util.MyBeanUtils;
 import com.mzyan.blog.vo.BlogQuery;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,7 +79,8 @@ public class BlogServiceImpl implements BlogService {
         if (b == null) {
             throw new NotFoundException("该博客不存在");
         }
-        BeanUtils.copyProperties(blog, b);
+        BeanUtils.copyProperties(blog, b, MyBeanUtils.getuNullPropertyNames(blog));
+        b.setUpdateTime(new Date());
         return blogRepository.save(b);
     }
 

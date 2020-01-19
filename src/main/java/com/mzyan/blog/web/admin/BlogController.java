@@ -32,9 +32,6 @@ public class BlogController {
     private static final String REDIRECT_LIST = "redirect:/admin/blogs";
     private static final String INPUT = "admin/blogs-input";
 
-    private Date createTime;
-    private Date updateTime;
-
 
     @Autowired
     private BlogService blogService;
@@ -72,8 +69,6 @@ public class BlogController {
     public String editInput(@PathVariable Long id, Model model) {
         setTypeAndTag(model);
         Blog blog = blogService.getBlog(id);
-        createTime = blog.getCreateTime();
-        updateTime = blog.getUpdateTime();
         blog.init();
         model.addAttribute("blog", blog);
         return INPUT;
@@ -85,9 +80,12 @@ public class BlogController {
         blog.setUser((User) session.getAttribute("user"));
         blog.setType(typeService.getType(blog.getType().getId()));
         blog.setTags(tagService.listTag(blog.getTagIds()));
-        blog.setCreateTime(createTime);
-        blog.setUpdateTime(updateTime);
-        Blog b = blogService.saveBlog(blog);
+        Blog b;
+        if (blog.getId() == null) {
+            b = blogService.saveBlog(blog);
+        } else {
+            b = blogService.updateBlog(blog.getId(), blog);
+        }
         if (b == null) {
             attributes.addFlashAttribute("message", "操作失败");
         } else {
