@@ -61,6 +61,12 @@ public class BlogServiceImpl implements BlogService {
 
     @Transactional
     @Override
+    public Page<Blog> listBlog(Pageable pageable) {
+        return blogRepository.findAll(pageable);
+    }
+
+    @Transactional
+    @Override
     public Blog saveBlog(Blog blog) {
         if (blog.getId() == null){
             blog.setCreateTime(new Date());
