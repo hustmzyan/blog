@@ -5,6 +5,8 @@ import com.mzyan.blog.vo.BlogQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * Created by mzYan on 2020-01-12 13:46
  */
@@ -15,6 +17,8 @@ public interface BlogService {
     Page<Blog> listBlog(Pageable pageable, BlogQuery blog);
 
     Page<Blog> listBlog(Pageable pageable);
+
+    List<Blog> listRecommendBlogTop(Integer size);
 
     Blog saveBlog(Blog blog);
 
