@@ -2372,3 +2372,60 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2020-01-21 17:39:28.765  INFO 9641 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-01-21 17:39:28.773  INFO 9641 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-01-21 17:39:28.786  INFO 9641 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-21 18:18:59.997  INFO 9847 --- [restartedMain] com.mzyan.blog.BlogApplication           : Starting BlogApplication on mzYandeMBP.lan with PID 9847 (started by macbook in /Users/macbook/Documents/工作学习/LocalToGit/blog)
+2020-01-21 18:19:00.010 DEBUG 9847 --- [restartedMain] com.mzyan.blog.BlogApplication           : Running with Spring Boot v2.1.11.RELEASE, Spring v5.1.12.RELEASE
+2020-01-21 18:19:00.011  INFO 9847 --- [restartedMain] com.mzyan.blog.BlogApplication           : The following profiles are active: dev
+2020-01-21 18:19:00.176  INFO 9847 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-21 18:19:00.176  INFO 9847 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-21 18:19:01.350  INFO 9847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-21 18:19:01.497  INFO 9847 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136ms. Found 5 JPA repository interfaces.
+2020-01-21 18:19:02.001  INFO 9847 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b636deab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 18:19:02.694  INFO 9847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-21 18:19:02.721  INFO 9847 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-21 18:19:02.721  INFO 9847 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-21 18:19:02.947  INFO 9847 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-21 18:19:02.948  INFO 9847 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2772 ms
+2020-01-21 18:19:03.182  INFO 9847 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 18:19:03.588  INFO 9847 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 18:19:03.653  INFO 9847 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-21 18:19:03.716  INFO 9847 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.14.Final}
+2020-01-21 18:19:03.718  INFO 9847 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-21 18:19:03.888  INFO 9847 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-21 18:19:04.078  INFO 9847 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-21 18:19:05.435  INFO 9847 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 18:19:05.549  INFO 9847 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-21 18:19:06.084  INFO 9847 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-21 18:19:07.227  INFO 9847 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 18:19:07.293  WARN 9847 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 18:19:07.402  INFO 9847 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-21 18:19:07.872  INFO 9847 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-21 18:19:07.875  INFO 9847 --- [restartedMain] com.mzyan.blog.BlogApplication           : Started BlogApplication in 9.113 seconds (JVM running for 10.622)
+2020-01-21 18:19:35.769  INFO 9847 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 18:19:35.770  INFO 9847 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 18:19:35.801  INFO 9847 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 30 ms
+2020-01-21 18:19:35.884  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-01-21 18:19:36.062  WARN 9847 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 18:19:36.094  WARN 9847 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 18:19:36.117  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:19:36.117  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Result : index
+2020-01-21 18:19:39.148  INFO 9847 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 18:19:39.169  INFO 9847 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:19:39.169  INFO 9847 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : Result : types
+2020-01-21 18:19:43.489  INFO 9847 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/types/19', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 19, {}]}
+2020-01-21 18:19:43.505  INFO 9847 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:19:43.505  INFO 9847 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Result : types
+2020-01-21 18:19:54.405  INFO 9847 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/types/5', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 5, {}]}
+2020-01-21 18:19:54.416  INFO 9847 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:19:54.416  INFO 9847 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Result : types
+2020-01-21 18:20:18.563  INFO 9847 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/28', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.blog', args=[28, {}]}
+2020-01-21 18:20:18.706  INFO 9847 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:20:18.706  INFO 9847 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Result : blog
+2020-01-21 18:21:34.216  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 18:21:34.225  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 18:21:34.226  INFO 9847 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Result : types
+2020-01-21 18:21:51.077  INFO 9847 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-21 18:21:51.079  INFO 9847 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 18:21:51.084  INFO 9847 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-21 18:21:51.095  INFO 9847 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
