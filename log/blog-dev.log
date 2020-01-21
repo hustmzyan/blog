@@ -2220,3 +2220,101 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2020-01-21 17:10:06.554  INFO 9468 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-01-21 17:10:06.557  INFO 9468 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-01-21 17:10:06.565  INFO 9468 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-21 17:11:50.455  INFO 9522 --- [restartedMain] com.mzyan.blog.BlogApplication           : Starting BlogApplication on mzYandeMBP.lan with PID 9522 (started by macbook in /Users/macbook/Documents/工作学习/LocalToGit/blog)
+2020-01-21 17:11:50.462 DEBUG 9522 --- [restartedMain] com.mzyan.blog.BlogApplication           : Running with Spring Boot v2.1.11.RELEASE, Spring v5.1.12.RELEASE
+2020-01-21 17:11:50.462  INFO 9522 --- [restartedMain] com.mzyan.blog.BlogApplication           : The following profiles are active: dev
+2020-01-21 17:11:50.630  INFO 9522 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-21 17:11:50.631  INFO 9522 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-21 17:11:51.694  INFO 9522 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-21 17:11:51.817  INFO 9522 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113ms. Found 5 JPA repository interfaces.
+2020-01-21 17:11:52.311  INFO 9522 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$91a26bbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 17:11:52.880  INFO 9522 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-21 17:11:52.907  INFO 9522 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-21 17:11:52.908  INFO 9522 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-21 17:11:53.139  INFO 9522 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-21 17:11:53.139  INFO 9522 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2507 ms
+2020-01-21 17:11:53.409  INFO 9522 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 17:11:53.788  INFO 9522 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 17:11:53.854  INFO 9522 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-21 17:11:53.960  INFO 9522 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.14.Final}
+2020-01-21 17:11:53.962  INFO 9522 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-21 17:11:54.128  INFO 9522 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-21 17:11:54.277  INFO 9522 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-21 17:11:55.318  INFO 9522 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 17:11:55.409  INFO 9522 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-21 17:11:55.798  INFO 9522 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-21 17:11:56.780  INFO 9522 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 17:11:56.841  WARN 9522 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 17:11:56.922  INFO 9522 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-21 17:11:57.333  INFO 9522 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-21 17:11:57.336  INFO 9522 --- [restartedMain] com.mzyan.blog.BlogApplication           : Started BlogApplication in 7.998 seconds (JVM running for 9.412)
+2020-01-21 17:12:09.100  INFO 9522 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 17:12:09.101  INFO 9522 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 17:12:09.115  INFO 9522 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-21 17:12:09.160  INFO 9522 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.blog', args=[27, {}]}
+2020-01-21 17:12:09.492  INFO 9522 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:12:09.492  INFO 9522 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Result : blog
+2020-01-21 17:17:36.706  INFO 9522 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.blog', args=[27, {}]}
+2020-01-21 17:17:36.751  INFO 9522 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:17:36.751  INFO 9522 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Result : blog
+2020-01-21 17:25:49.070  INFO 9522 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-21 17:25:49.074  INFO 9522 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 17:25:49.082  INFO 9522 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-21 17:25:49.098  INFO 9522 --- [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-21 17:25:56.629  INFO 9573 --- [restartedMain] com.mzyan.blog.BlogApplication           : Starting BlogApplication on mzYandeMBP.lan with PID 9573 (started by macbook in /Users/macbook/Documents/工作学习/LocalToGit/blog)
+2020-01-21 17:25:56.634 DEBUG 9573 --- [restartedMain] com.mzyan.blog.BlogApplication           : Running with Spring Boot v2.1.11.RELEASE, Spring v5.1.12.RELEASE
+2020-01-21 17:25:56.635  INFO 9573 --- [restartedMain] com.mzyan.blog.BlogApplication           : The following profiles are active: dev
+2020-01-21 17:25:56.745  INFO 9573 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-21 17:25:56.746  INFO 9573 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-21 17:25:57.741  INFO 9573 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-21 17:25:57.860  INFO 9573 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 5 JPA repository interfaces.
+2020-01-21 17:25:58.297  INFO 9573 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$20cb08d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 17:25:58.867  INFO 9573 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-21 17:25:58.893  INFO 9573 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-21 17:25:58.894  INFO 9573 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-21 17:25:59.123  INFO 9573 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-21 17:25:59.124  INFO 9573 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2377 ms
+2020-01-21 17:25:59.315  INFO 9573 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 17:25:59.673  INFO 9573 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 17:25:59.726  INFO 9573 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-21 17:25:59.792  INFO 9573 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.14.Final}
+2020-01-21 17:25:59.794  INFO 9573 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-21 17:25:59.997  INFO 9573 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-21 17:26:00.180  INFO 9573 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-21 17:26:01.561  INFO 9573 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 17:26:01.723  INFO 9573 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-21 17:26:02.225  INFO 9573 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-21 17:26:03.405  INFO 9573 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 17:26:03.475  WARN 9573 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 17:26:03.583  INFO 9573 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-21 17:26:04.162  INFO 9573 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-21 17:26:04.170  INFO 9573 --- [restartedMain] com.mzyan.blog.BlogApplication           : Started BlogApplication in 8.657 seconds (JVM running for 10.065)
+2020-01-21 17:26:08.940  INFO 9573 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 17:26:08.941  INFO 9573 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 17:26:08.965  INFO 9573 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-01-21 17:26:09.014  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.blog', args=[27, {}]}
+2020-01-21 17:26:09.449  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:26:09.449  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Result : blog
+2020-01-21 17:26:34.114  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/blog/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.blog', args=[27, {}]}
+2020-01-21 17:26:34.170  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:26:34.170  INFO 9573 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Result : blog
+2020-01-21 17:26:42.951  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.CommentController.post', args=[Comment{id=null, nickname='mzyan', email='hustmzyan@163.com', content='管理员评论', avatar='null', createTime=null, blog=Blog{id=27, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@74f12932]}
+2020-01-21 17:26:43.008  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:26:43.008  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Result : redirect:/comments/27
+2020-01-21 17:26:43.072  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/comments/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.CommentController.comments', args=[27, {}]}
+2020-01-21 17:26:43.117  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:26:43.119  INFO 9573 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Result : blog :: commentList
+2020-01-21 17:27:02.777  INFO 9573 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.CommentController.post', args=[Comment{id=null, nickname='mzyan', email='hustmzyan@163.com', content='管理员评论', avatar='null', createTime=null, blog=Blog{id=27, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatement=false, commentabled=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=33, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@74f12932]}
+2020-01-21 17:27:02.792  INFO 9573 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:27:02.793  INFO 9573 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : Result : redirect:/comments/27
+2020-01-21 17:27:02.808  INFO 9573 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/comments/27', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.CommentController.comments', args=[27, {}]}
+2020-01-21 17:27:02.851  INFO 9573 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 17:27:02.852  INFO 9573 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Result : blog :: commentList
+2020-01-21 17:28:05.959  INFO 9573 --- [Thread-26] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-21 17:28:05.960  INFO 9573 --- [Thread-26] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 17:28:05.966  INFO 9573 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-21 17:28:05.977  INFO 9573 --- [Thread-26] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
