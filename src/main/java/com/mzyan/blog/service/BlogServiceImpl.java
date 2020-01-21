@@ -18,9 +18,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by mzYan on 2020-01-12 13:49
@@ -116,6 +114,23 @@ public class BlogServiceImpl implements BlogService {
         Sort sort = new Sort(Sort.Direction.DESC, "updateTime");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogRepository.findTop(pageable);
+    }
+
+    @Transactional
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> years = blogRepository.findGroupYear();
+        Map<String, List<Blog>> map = new HashMap<>();
+        for (String year : years) {
+            map.put(year, blogRepository.fingByYear(year));
+        }
+        return map;
+    }
+
+    @Transactional
+    @Override
+    public Long countBlog() {
+        return blogRepository.count();
     }
 
     @Transactional

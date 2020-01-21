@@ -51,4 +51,9 @@ public class IndexController {
         model.addAttribute("comments", commentService.listCommentByBlogId(id));
         return "blog";
     }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
 }

@@ -82,7 +82,7 @@
                             </div>
                             <div class="row">
                                 <div class="column">
-                                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic teal left pointing label m-padded-mini m-text-thin" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
+                                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic left pointing label m-padded-mini m-text-thin" th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${blog.tags}" th:text="${tag.name}">方法论</a>
                                 </div>
                             </div>
                         </div>
