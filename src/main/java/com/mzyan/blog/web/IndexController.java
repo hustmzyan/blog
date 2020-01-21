@@ -1,7 +1,9 @@
 package com.mzyan.blog.web;
 
 
+import com.mzyan.blog.po.Comment;
 import com.mzyan.blog.service.BlogService;
+import com.mzyan.blog.service.CommentService;
 import com.mzyan.blog.service.TagService;
 import com.mzyan.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class IndexController {
     private TypeService typeService;
     @Autowired
     private TagService tagService;
+    @Autowired
+    private CommentService commentService;
 
     @GetMapping("/")
     public String index(@PageableDefault(size=8, sort={"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
@@ -44,6 +48,7 @@ public class IndexController {
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable Long id, Model model) {
         model.addAttribute("blog", blogService.getAndConvert(id));
+        model.addAttribute("comments", commentService.listCommentByBlogId(id));
         return "blog";
     }
 }
