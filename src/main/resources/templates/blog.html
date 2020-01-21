@@ -458,7 +458,7 @@ h5,h6{font-size:1em;}
                             <div class="content">
                                 <a class="author" th:text="${comment.nickname}">Matt</a>
                                 <div class="metadata">
-                                    <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm)}">Today at 5:42PM</span>
+                                    <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
                                 </div>
                                 <div class="text" th:text="${comment.content}">
                                     How artistic!
@@ -546,7 +546,7 @@ h5,h6{font-size:1em;}
                             <input type="text" name="email" placeholder="邮箱">
                         </div>
                     </div>
-                    <div class="field  m-margin-bottom-small m-mobile-wide">
+                    <div class="field m-margin-bottom-small m-mobile-wide">
                         <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
                     </div>
                 </div>
@@ -684,7 +684,7 @@ h5,h6{font-size:1em;}
     });
 
     function postData() {
-        $('#comment-container').load(/*[[@{/comments}]]*/"",{
+        $('#comment-container').load("/comments",{
             "parentComment.id" : $("[name='parentComment.id']").val(),
             "blog.id" : $("[name='blog.id']").val(),
             "nickname" : $("[name='nickname']").val(),

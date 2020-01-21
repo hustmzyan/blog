@@ -38,6 +38,6 @@ public class CommentController {
         comment.setBlog(blogService.getBlog(blogId));
         comment.setAvatar(avatar);
         commentService.saveComment(comment);
-        return "redirect:/comments/" + comment.getBlog().getId();
+        return "redirect:/comments/" + blogId;
     }
 }
