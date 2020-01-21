@@ -2429,3 +2429,80 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2020-01-21 18:21:51.079  INFO 9847 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-01-21 18:21:51.084  INFO 9847 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2020-01-21 18:21:51.095  INFO 9847 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-01-21 19:16:59.986  INFO 9997 --- [restartedMain] com.mzyan.blog.BlogApplication           : Starting BlogApplication on mzYandeMBP.lan with PID 9997 (started by macbook in /Users/macbook/Documents/工作学习/LocalToGit/blog)
+2020-01-21 19:16:59.991 DEBUG 9997 --- [restartedMain] com.mzyan.blog.BlogApplication           : Running with Spring Boot v2.1.11.RELEASE, Spring v5.1.12.RELEASE
+2020-01-21 19:16:59.991  INFO 9997 --- [restartedMain] com.mzyan.blog.BlogApplication           : The following profiles are active: dev
+2020-01-21 19:17:00.224  INFO 9997 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-21 19:17:00.224  INFO 9997 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-21 19:17:01.439  INFO 9997 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-21 19:17:01.647  INFO 9997 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177ms. Found 5 JPA repository interfaces.
+2020-01-21 19:17:02.159  INFO 9997 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3cc3be0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-21 19:17:02.865  INFO 9997 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-21 19:17:02.898  INFO 9997 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-21 19:17:02.898  INFO 9997 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-21 19:17:03.135  INFO 9997 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-21 19:17:03.135  INFO 9997 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2911 ms
+2020-01-21 19:17:03.369  INFO 9997 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-21 19:17:03.799  INFO 9997 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-21 19:17:03.873  INFO 9997 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-21 19:17:03.959  INFO 9997 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.14.Final}
+2020-01-21 19:17:03.960  INFO 9997 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-21 19:17:04.144  INFO 9997 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-01-21 19:17:04.369  INFO 9997 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-01-21 19:17:05.786  INFO 9997 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 19:17:05.880  INFO 9997 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-01-21 19:17:06.358  INFO 9997 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-21 19:17:07.691  INFO 9997 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-21 19:17:07.771  WARN 9997 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-21 19:17:07.834  INFO 9997 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-21 19:17:08.221  INFO 9997 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-21 19:17:08.223  INFO 9997 --- [restartedMain] com.mzyan.blog.BlogApplication           : Started BlogApplication in 9.315 seconds (JVM running for 10.525)
+2020-01-21 19:17:53.791  INFO 9997 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-21 19:17:53.792  INFO 9997 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-21 19:17:53.811  INFO 9997 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2020-01-21 19:17:53.917  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-01-21 19:17:53.930  INFO 9997 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-01-21 19:17:54.074  WARN 9997 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 19:17:54.074  WARN 9997 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 19:17:54.108  WARN 9997 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 19:17:54.109  WARN 9997 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-01-21 19:17:54.136  INFO 9997 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:17:54.137  INFO 9997 --- [http-nio-8080-exec-1] com.mzyan.blog.aspect.LogAspect          : Result : index
+2020-01-21 19:17:54.138  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:17:54.139  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Result : index
+2020-01-21 19:17:57.236  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 19:17:57.280  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:17:57.281  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:18:29.826  INFO 9997 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 19:18:29.837  INFO 9997 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:18:29.837  INFO 9997 --- [http-nio-8080-exec-2] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:18:35.992  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/11', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 11, {}]}
+2020-01-21 19:18:36.015  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:18:36.016  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:18:46.429  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/10', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 10, {}]}
+2020-01-21 19:18:46.450  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:18:46.451  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:19:38.927  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 19:19:38.944  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:19:38.944  INFO 9997 --- [http-nio-8080-exec-6] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:20:55.512  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-01-21 19:20:55.539  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:20:55.539  INFO 9997 --- [http-nio-8080-exec-10] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:20:59.773  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/11', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 11, {}]}
+2020-01-21 19:20:59.790  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:20:59.790  INFO 9997 --- [http-nio-8080-exec-4] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:21:01.359  INFO 9997 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/10', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 10, {}]}
+2020-01-21 19:21:01.371  INFO 9997 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:21:01.371  INFO 9997 --- [http-nio-8080-exec-9] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:21:03.084  INFO 9997 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/11', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 11, {}]}
+2020-01-21 19:21:03.099  INFO 9997 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:21:03.099  INFO 9997 --- [http-nio-8080-exec-8] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:21:06.435  INFO 9997 --- [http-nio-8080-exec-7] com.mzyan.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/tags/10', ip='0:0:0:0:0:0:0:1', classMethod='com.mzyan.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 10, {}]}
+2020-01-21 19:21:06.463  INFO 9997 --- [http-nio-8080-exec-7] com.mzyan.blog.aspect.LogAspect          : ------doAfter---------
+2020-01-21 19:21:06.463  INFO 9997 --- [http-nio-8080-exec-7] com.mzyan.blog.aspect.LogAspect          : Result : tags
+2020-01-21 19:22:22.204  INFO 9997 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-21 19:22:22.206  INFO 9997 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-21 19:22:22.218  INFO 9997 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-21 19:22:22.237  INFO 9997 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
